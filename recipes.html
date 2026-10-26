@@ -123,6 +123,63 @@
             </article>
 
         </div>
+        <section class="cooking-tip">
+    <h2>Cooking Tips 🍜</h2>
+
+    <button id="tipBtn" type="button">
+        Show Cooking Tip
+    </button>
+
+    <p id="tipText" hidden>
+        Add an egg and cheese to make your ramen
+        even more delicious!
+    </p>
+</section>
+<section class="ramen-form">
+    <h2>Find Your Perfect Ramen 🍜</h2>
+
+    <div id="step1">
+        <h3>Step 1: Choose your flavor</h3>
+
+        <select id="ramenFlavor">
+            <option value="Spicy">Spicy Ramen</option>
+            <option value="Creamy">Creamy Ramen</option>
+            <option value="Classic">Classic Ramen</option>
+        </select>
+
+        <button id="nextBtn" type="button">Next</button>
+    </div>
+
+    <div id="step2" hidden>
+        <h3>Step 2: Enter your name</h3>
+
+        <input type="text"
+               id="ramenName"
+               placeholder="Your name">
+
+        <button id="backBtn" type="button">Back</button>
+        <button id="finishBtn" type="button">Finish</button>
+    </div>
+
+    <p id="ramenResult" aria-live="polite"></p>
+</section>
+
+<!-- TASK 3.2 - Arrays and Loops -->
+
+<!-- TASK 3.3 - Higher-Order Functions -->
+
+<section class="ramen-collection">
+    <h2>Our Ramen Collection 🍜</h2>
+
+    <div class="ramen-filters">
+        <button class="filter-btn" data-type="All">All</button>
+        <button class="filter-btn" data-type="Spicy">Spicy</button>
+        <button class="filter-btn" data-type="Creamy">Creamy</button>
+        <button class="filter-btn" data-type="Classic">Classic</button>
+    </div>
+
+    <ul id="ramenList"></ul>
+</section>
     </main>
 
     <footer class="team-credits">
@@ -131,6 +188,7 @@
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="recipes.js"></script>
 </body>
 
 </html>

@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="creative.css">
     <title>MEDASYM RAMEN | Build Your Own Bowl</title>
 </head>
 
@@ -178,6 +179,39 @@
             </main>
         </div>
     </div>
+    <section class="creative container my-4">
+        <div class="row g-4">
+            <div class="col-md-6">
+                <div class="creative-card">
+                    <button id="soundToggle" class="creative-btn sound-toggle" type="button">🔊 Sound on</button>
+                    <h2>Your Bowl Preview 🍜</h2>
+                    <p class="small">Change the options above and watch your bowl update. Press <kbd>R</kbd> for ramen rain, <kbd>M</kbd> to mute.</p>
+                    <div class="bowl-stage" id="bowlStage">
+                        <span class="steam">💨</span><span class="steam">💨</span><span class="steam">💨</span>
+                        🍜
+                        <div class="bowl-toppings" id="bowlToppings"></div>
+                    </div>
+                    <div class="spice-meter" id="spiceMeter"></div>
+                    <p class="spice-label" id="spiceLabel"></p>
+                    <p class="price-tag" id="priceTag"></p>
+                    <p class="order-result" id="orderResult" aria-live="polite"></p>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="creative-card">
+                    <h2>Catch the Noodles 🎮</h2>
+                    <p class="small">Click 🍜 (+1) and 🍥 (+2). Avoid 🌶 (-2)! You have 20 seconds.</p>
+                    <div class="game-stats">
+                        <span>Score: <span id="gameScore">0</span></span>
+                        <span>Time: <span id="gameTime">20</span></span>
+                        <span>Best: <span id="gameBest">0</span></span>
+                    </div>
+                    <div class="game-arena" id="gameArena"></div>
+                    <button id="gameStart" class="creative-btn" type="button">Start</button>
+                </div>
+            </div>
+        </div>
+    </section>
     <footer class="team-credits">
         <p>Team member Dayana worked on the layout and styling
             of the Ramen Types page and the Build Your Own Bowl page.
@@ -189,7 +223,7 @@
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-
+    <script src="creative.js"></script>
 </body>
 
 </html>
